@@ -1,0 +1,3 @@
+# mdbook-var
+
+EARLY WORK IN PROGRESS

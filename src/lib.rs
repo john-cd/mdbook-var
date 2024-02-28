@@ -19,7 +19,7 @@ impl Preprocessor for Pre {
         Self::NAME
     }
 
-    fn run(&self, ctx: &PreprocessorContext, mut book: Book) -> Result<Book, Error> {
+    fn run(&self, _ctx: &PreprocessorContext, mut book: Book) -> Result<Book, Error> {
         info!("Running mdbook-hide preprocessor");
 
         // let _ = match ctx

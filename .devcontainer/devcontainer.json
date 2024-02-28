@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/rust
 {
-	"name": "Rust",
+	"name": "mdbook-var (Rust)",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/rust:1-1-bookworm",
 
@@ -30,10 +30,10 @@
 	},
 	"features": {
 		"ghcr.io/eitsupi/devcontainer-features/mdbook:1": {}
-	}
+	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "rustc --version",
+	"postCreateCommand": "git config --global user.email \"johncd222@gmail.com\"; git config --global user.name \"John CD\""
 
 	// Configure tool-specific properties.
 	// "customizations": {},

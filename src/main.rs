@@ -1,7 +1,7 @@
 use clap::{Arg, ArgMatches, Command};
 use mdbook::errors::Error;
 use mdbook::preprocess::{CmdPreprocessor, Preprocessor};
-use mdbook_pre;
+use mdbook_var;
 use semver::{Version, VersionReq};
 use std::io;
 use std::process;
@@ -20,7 +20,7 @@ fn main() {
     let matches = make_app().get_matches();
 
     // Users will want to construct their own preprocessor here
-    let preprocessor = mdbook_pre::Pre::new();
+    let preprocessor = mdbook_var::Pre::new();
 
     if let Some(sub_args) = matches.subcommand_matches("supports") {
         handle_supports(&preprocessor, sub_args);
